@@ -43,7 +43,9 @@ $bare-list-inline-delimitor:	  "|" !default;
 @media (min-width: bareEm($bare-bp-s)) {
 
 	.#{$bare-ns}list-inline {
-		display: inline;
+		> li {
+			display: inline-block;
+		}
 	}	
 
 }
@@ -53,7 +55,7 @@ $bare-list-inline-delimitor:	  "|" !default;
 // ========================================================================== 
 
 @if ($bare-list-inline--delimited == true) {
-
+	
 	.#{$bare-ns}list-inline--delimited {
 
  		> li + li:before {
