@@ -1,0 +1,65 @@
+// 
+// Declarations  
+// ========================================================================== 
+
+//
+// Features:
+//
+
+$bare-list-inline--delimited:	false !default;
+
+// 
+// Defaults:
+// 
+
+$bare-list-inline-delimitor:	  "|" !default;
+
+/* 
+   #list-inline
+   ========================================================================== */
+
+/**
+ * The list-inline object creates inline lists.
+ *
+ * Usage:
+ *
+ * <ul class="list-inline">
+ *     <li></li>
+ *     <li></li>
+ *     <li></li>
+ * </ul>
+ */
+
+.#{$bare-ns}list-inline {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/**
+ * @media: Make list-items inline. 
+ */
+
+@media (min-width: bareEm($bare-bp-s)) {
+
+	.#{$bare-ns}list-inline {
+		display: inline;
+	}	
+
+}
+
+// 
+// #list-inline--delimited
+// ========================================================================== 
+
+@if ($bare-list-inline--delimited == true) {
+
+	.#{$bare-ns}list-inline--delimited {
+
+ 		> li + li:before {
+ 			content: "\00A0" $bare-list-inline-delimitor "\00A0";
+ 		}
+
+	}
+
+}
