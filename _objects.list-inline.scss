@@ -30,7 +30,7 @@ $bare-list-inline-delimitor:	  "|" !default;
  * </ul>
  */
 
-.#{$bare-ns}list-inline {
+.o-list-inline {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -42,7 +42,7 @@ $bare-list-inline-delimitor:	  "|" !default;
 
 @media (min-width: bareMedia($bare-bp-s)) {
 
-	.#{$bare-ns}list-inline {
+	.o-list-inline {
 		> li {
 			display: inline-block;
 		}
@@ -56,7 +56,7 @@ $bare-list-inline-delimitor:	  "|" !default;
 
 @if ($bare-list-inline--delimited == true) {
 	
-	.#{$bare-ns}list-inline--delimited {
+	.o-list-inline--delimited {
 
  		> li + li:before {
  			content: "\00A0" $bare-list-inline-delimitor "\00A0";
