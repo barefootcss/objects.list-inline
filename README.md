@@ -2,7 +2,7 @@
 
 The `list-inline` object creates inline lists.
 
-	<ul class="list-inline">
+	<ul class="o-list-inline">
 		<li></li>
 		<li></li>
 		<li></li>
@@ -24,7 +24,7 @@ Import into project:
 
 The `list-inline--delimited` option delimits an inline list with a special character.
 
-	<ul class="list-inline list-inline--delimited">
+	<ul class="o-list-inline o-list-inline--delimited">
 		<li></li>
 		<li></li>
 		<li></li>
