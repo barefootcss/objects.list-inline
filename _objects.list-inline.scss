@@ -2,17 +2,15 @@
 // Declarations  
 // ========================================================================== 
 
-//
+// 
 // Features:
-//
-
-$bare-list-inline--delimited:	false !default;
-
-// 
-// Defaults:
 // 
 
-$bare-list-inline-delimitor:	  "|" !default;
+$bare-list-inline--xs:				false !default;
+$bare-list-inline--s:				false !default;
+$bare-list-inline--m:				false !default;
+$bare-list-inline--l:				false !default;
+$bare-list-inline--xl:				false !default;
 
 /* 
    #list-inline
@@ -34,34 +32,89 @@ $bare-list-inline-delimitor:	  "|" !default;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
+	> li {
+		display: inline-block;
+	}
 }
 
-/**
- * @media: Make list-items inline. 
- */
+// 
+// #list-inline--xs
+// ========================================================================== 
 
-@media (min-width: bareMedia($bare-bp-s)) {
+@if ($bare-list-inline--xs == true) {
 
-	.o-list-inline {
+	.o-list-inline--xs {
 		> li {
-			display: inline-block;
+			&:not(:first-child) {
+				padding-left: bareRem($bare-sp-xs);
+			}			
 		}
-	}	
+	}
 
 }
 
 // 
-// #list-inline--delimited
+// #list-inline--s
 // ========================================================================== 
 
-@if ($bare-list-inline--delimited == true) {
-	
-	.o-list-inline--delimited {
+@if ($bare-list-inline--s == true) {
 
- 		> li + li:before {
- 			content: "\00A0" $bare-list-inline-delimitor "\00A0";
- 		}
+	.o-list-inline--s {
+		> li {
+			&:not(:first-child) {
+				padding-left: bareRem($bare-sp-s);
+			}			
+		}
+	}
 
+}
+
+// 
+// #list-inline--m
+// ========================================================================== 
+
+@if ($bare-list-inline--m == true) {
+
+
+	.o-list-inline--m {
+		> li {
+			&:not(:first-child) {
+				padding-left: bareRem($bare-sp-m);
+			}			
+		}
+	}
+
+}
+
+// 
+// #list-inline--l
+// ========================================================================== 
+
+@if ($bare-list-inline--l == true) {
+
+	.o-list-inline--l {
+		> li {
+			&:not(:first-child) {
+				padding-left: bareRem($bare-sp-l);
+			}			
+		}
+	}
+
+}
+
+// 
+// #list-inline--xl
+// ========================================================================== 
+
+@if ($bare-list-inline--xl == true) {
+
+	.o-list-inline--xl {
+		> li {
+			&:not(:first-child) {
+				padding-left: bareRem($bare-sp-xl);
+			}			
+		}
 	}
 
 }
