@@ -20,11 +20,54 @@ Import into project:
 
 ## Options
 
-**list-inline--delimited**
 
-The `list-inline--delimited` option delimits an inline list with a special character.
+## Options
 
-	<ul class="o-list-inline o-list-inline--delimited">
+**list-inline--xs**
+
+The `list-inline--xs` applies an extra-small gutter between list items.
+
+	<ul class="o-list-inline o-list-inline--xs">
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	
+**list-inline--s**
+
+The `list-inline--s` applies a small gutter between list items.
+
+	<ul class="o-list-inline o-list-inline--s">
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	
+**list-inline--m**
+
+The `list-inline--m` applies a medium gutter between list items.
+
+	<ul class="o-list-inline o-list-inline--m">
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>	
+	
+**list-inline--l**
+
+The `list-inline--l` applies a large gutter between list items.
+
+	<ul class="o-list-inline o-list-inline--l">
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>	
+	
+**list-inline--xl**
+
+The `list-inline--xl` applies an extra-large gutter between list items.
+
+	<ul class="o-list-inline o-list-inline--xl">
 		<li></li>
 		<li></li>
 		<li></li>
