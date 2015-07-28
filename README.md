@@ -20,9 +20,6 @@ Import into project:
 
 ## Options
 
-
-## Options
-
 **list-inline--xs**
 
 The `list-inline--xs` applies an extra-small gutter between list items.
