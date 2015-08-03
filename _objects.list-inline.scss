@@ -11,8 +11,7 @@ $bare-list-inline--s:				false !default;
 $bare-list-inline--m:				false !default;
 $bare-list-inline--l:				false !default;
 $bare-list-inline--xl:				false !default;
-$bare-list-inline--wrap-s:			false !default;
-$bare-list-inline--wrap-m:			false !default;
+$bare-list-inline--can-wrap:			false !default;
 
 /* 
    #list-inline
@@ -122,41 +121,19 @@ $bare-list-inline--wrap-m:			false !default;
 }
 
 // 
-// #list-inline--wrap-s
+// #list-inline--can-wrap
 // ========================================================================== 
 
-@if ($bare-list-inline--wrap-s == true) {
+@if ($bare-list-inline--can-wrap == true) {
 
-	.o-list-inline--wrap-s {
+	.o-list-inline--can-wrap {
 		> li {
 			display: block;
 		}
 	}
 	
 	@media (min-width: bareEm($bare-bp-s)) {
-		.o-list-inline--wrap-s {
-			> li {
-				display: inline-block;
-			}
-		}
-	}
-	
-}
-
-// 
-// #list-inline--wrap-m
-// ========================================================================== 
-
-@if ($bare-list-inline--wrap-m == true) {
-
-	.o-list-inline--wrap-m {
-		> li {
-			display: block;
-		}
-	}
-	
-	@media (min-width: bareEm($bare-bp-m)) {
-		.o-list-inline--wrap-m {
+		.o-list-inline--can-wrap {
 			> li {
 				display: inline-block;
 			}
