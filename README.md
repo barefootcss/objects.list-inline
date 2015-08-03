@@ -72,7 +72,7 @@ The `list-inline--xl` applies an extra-large gutter between list items.
 
 **list-inline--wrap-s**
 
-The `list-inline--wrap-s` treats list-items as blocks on small resolutions.
+The `list-inline--wrap-s` turns list items to blocks on small resolutions.
 
 	<ul class="o-list-inline o-list-inline--wrap-s">
 		<li></li>
@@ -82,7 +82,7 @@ The `list-inline--wrap-s` treats list-items as blocks on small resolutions.
 	
 **list-inline--wrap-m**
 
-The `list-inline--wrap-s` treats list-items as blocks on medium resolutions.
+The `list-inline--wrap-s` turns list items to blocks on medium resolutions.
 
 	<ul class="o-list-inline o-list-inline--wrap-m">
 		<li></li>
